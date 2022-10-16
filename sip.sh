@@ -288,7 +288,7 @@ DOMAIN=$(cat /etc/xray/domain)
 echo -e ""
 echo -e "Current Domain  : $DOMAIN"
 echo -e "Current IP VPS  : $IPVPS"
-echo -e "Total Ram       : $tram MB / Used $uram MB
+echo -e "Total Ram       : $tram MB / Used $uram MB"
 echo -e ""
 echo -e "${PURPLE} ┌───────────────────────────────────────────────┐${NC}"
 echo -e "${PURPLE} │${NC}  • SSH / TUN              • $status_ssh"
