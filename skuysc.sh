@@ -1,19 +1,23 @@
 #!/bin/bash
 apt-get install lolcat -y
-read -p "Type License For Script : " pwd
+clear
+
+echo -e "×××××REQUEST ACCESS SCRIPT××××××" | lolcat
+echo -e "--------------------------------" | lolcat
+read -p "Input Your License Key : " pwd
 
 user=$( curl -s "LINK .TXT" | grep $pwd )
 if [ "$pwd" == "$user" ];
 then
 
 clear
-echo -e "Checking Status License..."
+echo -e "Checking Status License..." | lolcat
 sleep 2
 clear
-echo -e "License Verification Success!"
+echo -e "License Verification Success!" lolcat
 sleep 2
 clear
-echo -e "Wait To Process Install" 
+echo -e "Wait To Process Install" | lolcat
 sleep 3
 clear
 rm -rf /root/setup.sh
@@ -24,15 +28,15 @@ chmod +x /root/install.sh
 else
 
 clear
-echo -e "Checking Status License..."
+echo -e "Checking Status License..." | lolcat
 sleep 2
 clear
-echo -e "License Wrong or Expired.!!"
+echo -e "License Wrong or Expired.!!" | lolcat
 sleep 2
 clear
-echo -e "Permission Denied.!! Wrong License or Expired License"
+echo -e "Permission Denied.!! Wrong License or Expired License" | lolcat
 sleep 1.5
-echo -e "Wait To Process Stop Installation"
+echo -e "Wait To Process Stop Installation" | lolcat
 rm -rf /root/setup.sh
 exit
 
