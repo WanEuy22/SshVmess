@@ -19,8 +19,9 @@ color3='\e[0m'
 clear
 
 echo -e ""
+echo -e "═════════════════════════════════════════════════════════════" | lolcat
 echo -e "\E[45;1;39m                   ⇱ Menu SSH & OpenVPN  ⇲                   \E[0m"
-
+echo -e "═════════════════════════════════════════════════════════════" | lolcat
 echo -e ""
 echo -e "[${GREEN}A${NC}] ${rd}•${NC} Membuat Akun SSH & OpenVPN"
 echo -e "[${GREEN}B${NC}] ${rd}•${NC} Perpanjang Akun SSH & OpenVPN"
@@ -30,26 +31,28 @@ echo -e "[${GREEN}E${NC}] ${rd}•${NC} Hapus Pengguna SSH & OpenVPN"
 echo -e "[${GREEN}F${NC}] ${rd}•${NC} Membuat Akun Trial SSH & OpenVPN"
 echo -e "[${GREEN}G${NC}] ${rd}•${NC} Hapus Akun Expired SSH & OpenVPN"
 echo -e ""
-
+echo -e "═════════════════════════════════════════════════════════════" | lolcat
 echo -e "\E[45;1;39m                      ⇱ Menu Vmess ⇲                         \E[0m"
+echo -e "═════════════════════════════════════════════════════════════" | lolcat
 echo -e ""
-
 echo -e "[${GREEN}H${NC}] ${rd}•${NC} Membuat Akun Xray/Vmess"
 echo -e "[${GREEN}i${NC}] ${rd}•${NC} Perpanjang Akun Vmess"
 echo -e "[${GREEN}J${NC}] ${rd}•${NC} Hapus Akun Xray/Vmess"
 echo -e "[${GREEN}K${NC}] ${rd}•${NC} Cek Vmess User Login"
-
 echo -e ""
+echo -e "═════════════════════════════════════════════════════════════" | lolcat
 echo -e "\E[45;1;39m                      ⇱ Menu System ⇲                        \E[0m"
+echo -e "═════════════════════════════════════════════════════════════" | lolcat
 echo -e ""
-
 echo -e "[${GREEN}01${NC}] ${rd}×${NC} Add New Subdomain       [${GREEN}06${NC}] ${rd}×${NC} Renew Certificate"
 echo -e "[${GREEN}02${NC}] ${rd}×${NC} Cek Status Layanan      [${GREEN}07${NC}] ${rd}×${NC} Cek Pemakaian Ram"
 echo -e "[${GREEN}03${NC}] ${rd}×${NC} Restart Semua Layanan   [${GREEN}08${NC}] ${rd}×${NC} SpeedTest Server"
 echo -e "[${GREEN}04${NC}] ${rd}×${NC} Cek Spesifikasi VPS     [${GREEN}09${NC}] ${rd}×${NC} Change Password VPS"
 echo -e "[${GREEN}05${NC}] ${rd}×${NC} Reboot Your VPS         [${GREEN}10${NC}] ${rd}×${NC} About"
 echo -e ""
+echo -e "═════════════════════════════════════════════════════════════" | lolcat
 echo -e "\E[45;1;39m               ⇱ Script Installer SSH & VMESS ⇲              \E[0m"
+echo -e "═════════════════════════════════════════════════════════════" | lolcat
 echo -e ""
 echo -e  ""
  read -p " Select Menu (A - K or 1 - 10) : " menu
