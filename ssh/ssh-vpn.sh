@@ -425,7 +425,7 @@ wget -O bannerku "https://data.vip-user.me/update/bannerku"
 wget -O running "https://data.vip-user.me/update/running.sh"
 wget -O cloudflare-pointing "https://data.vip-user.me/update/cloudflare-pointing.sh"
 wget -O cloudflare-setting "https://data.vip-user.me/update/cloudflare-setting.sh"
-wget -O ins-xray "https://data.vip-user.me/xray/ins-xray.sh
+wget -O ins-xray "https://data.vip-user.me/xray/ins-xray.sh"
 chmod +x portsshnontls
 chmod +x portsshws
 chmod +x cloudflare-pointing
