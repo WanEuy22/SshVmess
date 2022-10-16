@@ -290,22 +290,21 @@ echo -e "Current Domain  : $DOMAIN"
 echo -e "Current IP VPS  : $IPVPS"
 echo -e "Total Ram       : $tram MB / Used $uram MB
 echo -e ""
-echo -e "
-${PURPLE} ┌───────────────────────────────────────────────┐${NC}
-${PURPLE} │${NC}  • SSH / TUN              • $status_ssh
-${PURPLE} │${NC}  • OVPN WS                • $swsovpn
-${PURPLE} │${NC}  • DROPBEAR               • $status_beruangjatuh
-${PURPLE} │${NC}  • VNSTAT                 • $status_vnstat
-${PURPLE} │${NC}  • WS STUNNEL             • $swstls
-${PURPLE} │${NC}  • WS DROPBEAR            • $swsdrop
-${PURPLE} │${NC}  • STUNNEL                • $status_stunnel
-${PURPLE} │${NC}  • VMESS TLS              • $status_tls_v2ray
-${PURPLE} │${NC}  • VMESS HTTP             • $status_nontls_v2ray
-${PURPLE} │${NC}  • SSLH                   • $sosslh
-${PURPLE} │${NC}  • FAIL2BAN               • $status_fail2ban
-${PURPLE} │${NC}  • OHP SSH                • $sohr
-${PURPLE} │${NC}  • OHP DROPBEAR           • $sohp
-${PURPLE} └───────────────────────────────────────────────┘${NC}"
+echo -e "${PURPLE} ┌───────────────────────────────────────────────┐${NC}"
+echo -e "${PURPLE} │${NC}  • SSH / TUN              • $status_ssh"
+echo -e "${PURPLE} │${NC}  • OVPN WS                • $swsovpn"
+echo -e "${PURPLE} │${NC}  • DROPBEAR               • $status_beruangjatuh"
+echo -e "${PURPLE} │${NC}  • VNSTAT                 • $status_vnstat"
+echo -e "${PURPLE} │${NC}  • WS STUNNEL             • $swstls"
+echo -e "${PURPLE} │${NC}  • WS DROPBEAR            • $swsdrop"
+echo -e "${PURPLE} │${NC}  • STUNNEL                • $status_stunnel"
+echo -e "${PURPLE} │${NC}  • VMESS TLS              • $status_tls_v2ray"
+echo -e "${PURPLE} │${NC}  • VMESS HTTP             • $status_nontls_v2ray"
+echo -e "${PURPLE} │${NC}  • SSLH                   • $sosslh"
+echo -e "${PURPLE} │${NC}  • FAIL2BAN               • $status_fail2ban"
+echo -e "${PURPLE} │${NC}  • OHP SSH                • $sohr"
+echo -e "${PURPLE} │${NC}  • OHP DROPBEAR           • $sohp"
+echo -e "${PURPLE} └───────────────────────────────────────────────┘${NC}"
 echo -e ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
