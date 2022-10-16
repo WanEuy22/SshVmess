@@ -286,25 +286,28 @@ uram=$( free -m | awk 'NR==2 {print $3}' )
 IPVPS=$(curl -s ipinfo.io/ip )
 DOMAIN=$(cat /etc/xray/domain)
 echo -e ""
-echo -e "Current Domain  : $DOMAIN"
-echo -e "Current IP VPS  : $IPVPS"
-echo -e "Total Ram       : $tram MB / Used $uram MB"
+echo -e " Current Domain      : $DOMAIN"
+echo -e " Current IP VPS      : $IPVPS"
+echo -e " Total Ram           : $tram MB / Used $uram MB"
+echo -e " Available Storage   : 
+echo -e " Total Storage       :
+echo -e " Used Storage        : 
 echo -e ""
-echo -e "${PURPLE} ┌───────────────────────────────────────────────┐${NC}"
-echo -e "${PURPLE} │${NC}  • SSH / TUN              • $status_ssh"
-echo -e "${PURPLE} │${NC}  • OVPN WS                • $swsovpn"
-echo -e "${PURPLE} │${NC}  • DROPBEAR               • $status_beruangjatuh"
-echo -e "${PURPLE} │${NC}  • VNSTAT                 • $status_vnstat"
-echo -e "${PURPLE} │${NC}  • WS STUNNEL             • $swstls"
-echo -e "${PURPLE} │${NC}  • WS DROPBEAR            • $swsdrop"
-echo -e "${PURPLE} │${NC}  • STUNNEL                • $status_stunnel"
-echo -e "${PURPLE} │${NC}  • VMESS TLS              • $status_tls_v2ray"
-echo -e "${PURPLE} │${NC}  • VMESS HTTP             • $status_nontls_v2ray"
-echo -e "${PURPLE} │${NC}  • SSLH                   • $sosslh"
-echo -e "${PURPLE} │${NC}  • FAIL2BAN               • $status_fail2ban"
-echo -e "${PURPLE} │${NC}  • OHP SSH                • $sohr"
-echo -e "${PURPLE} │${NC}  • OHP DROPBEAR           • $sohp"
-echo -e "${PURPLE} └───────────────────────────────────────────────┘${NC}"
+echo -e " ┌───────────────────────────────────────────────" | lolcat
+echo -e " │" | lolcat  echo -e "• SSH / TUN              • $status_ssh"
+echo -e " │" | lolcat  echo -e "• OVPN WS                • $swsovpn"
+echo -e " │" | lolcat  echo -e "• DROPBEAR               • $status_beruangjatuh"
+echo -e " │" | lolcat  echo -e "• VNSTAT                 • $status_vnstat"
+echo -e " │" | lolcat  echo -e "• WS STUNNEL             • $swstls"
+echo -e " │" | lolcat  echo -e "• WS DROPBEAR            • $swsdrop"
+echo -e " │" | lolcat  echo -e "• STUNNEL                • $status_stunnel"
+echo -e " │" | lolcat  echo -e "• VMESS TLS              • $status_tls_v2ray"
+echo -e " │" | lolcat  echo -e "• VMESS HTTP             • $status_nontls_v2ray"
+echo -e " │" | lolcat  echo -e "• SSLH                   • $sosslh"
+echo -e " │" | lolcat  echo -e "• FAIL2BAN               • $status_fail2ban"
+echo -e " │" | lolcat  echo -e "• OHP SSH                • $sohr"
+echo -e " │" | lolcat  echo -e "• OHP DROPBEAR           • $sohp"
+echo -e " └───────────────────────────────────────────────" | lolcat
 echo -e ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
