@@ -76,7 +76,7 @@ systemctl restart xray.service
 service cron restart
 clear
 echo -e ""
-echo -e "${BLUE}======-XRAYS/VMESS-======${NC}"
+echo -e "======-XRAYS/VMESS-======"
 echo -e "Remarks     : ${user}"
 echo -e "IP/Host     : ${IP}"
 echo -e "Address     : ${domain}"
@@ -89,11 +89,11 @@ echo -e "Network     : ws"
 echo -e "Path        : /waan"
 echo -e "Created     : $hariini"
 echo -e "Expired     : $exp"
-echo -e "${BLUE}=========================${NC}"
+echo -e "========================="
 echo -e "Link TLS    : ${xrayv2ray1}"
 echo -e "========================="
 echo -e "Link HTTP   : ${xrayv2ray2}"
-echo -e "${BLUE}=========================${NC}"
+echo -e "========================="
 echo -e ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
