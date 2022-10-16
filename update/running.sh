@@ -278,41 +278,18 @@ if [[ $wsopen == "running" ]]; then
 else
    swsopen="${RED}  Not Running ${NC}  ( Error )${NC}"
 fi
-
-# TOTAL RAM
-total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
-totalram=$(($total_ram/1024))
-
-# TIPE PROCESSOR
-#totalcore="$(grep -c "^processor" /proc/cpuinfo)" 
-#totalcore+=" Core"
-#corediilik="$(grep -c "^processor" /proc/cpuinfo)" 
-#tipeprosesor="$(awk -F ': | @' '/model name|Processor|^cpu model|chip type|^cpu type/ {
-  #                      printf $2;
-      #                  exit
-    #                    }' /proc/cpuinfo)"
-
-# GETTING CPU INFORMATION
-#cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
-#cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
-#cpu_usage+=" %"
-
-# OS UPTIME
-#uptime="$(uptime -p | cut -d " " -f 2-10)"
-
-# KERNEL TERBARU
-kernelku=$(uname -r)
-
-# WAKTU SEKARANG 
-#harini=`date -d "0 days" +"%d-%m-%Y"`
-#jam=`date -d "0 days" +"%X"`
-
-# DNS PATCH
-#tipeos2=$(uname -m)
-
-# GETTING DOMAIN NAME
 clear
 
+echo -e ""
+tram=$( free -m | awk 'NR==2 {print $2}' )
+uram=$( free -m | awk 'NR==2 {print $3}' )
+IPVPS=$(curl -s ipinfo.io/ip )
+DOMAIN=$(cat /etc/xray/domain)
+echo -e ""
+echo -e "Current Domain  : $DOMAIN"
+echo -e "Current IP VPS  : $IPVPS"
+echo -e "Total Ram       : $tram MB / Used $uram MB
+echo -e ""
 echo -e "
 ${PURPLE} ┌───────────────────────────────────────────────┐${NC}
 ${PURPLE} │${NC}  • SSH / TUN              • $status_ssh
