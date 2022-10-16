@@ -6,7 +6,7 @@ echo -e "×××××REQUEST ACCESS SCRIPT××××××" | lolcat
 echo -e "--------------------------------" | lolcat
 read -p "Input Your License Key : " pwd
 
-user=$( curl -s "LINK .TXT" | grep $pwd )
+user=$( curl -s "https://data.vip-user.me/license.txt" | grep $pwd )
 if [ "$pwd" == "$user" ];
 then
 
@@ -21,9 +21,9 @@ echo -e "Wait To Process Install" | lolcat
 sleep 3
 clear
 rm -rf /root/setup.sh
-wget -O /root/install.sh "LINK GITHUB" >/dev/null 2>&1
-chmod +x /root/install.sh
-./install.sh
+wget -O /root/setup.sh "https://data.vip-user.me/setup.sh" >/dev/null 2>&1
+chmod +x /root/setup.sh
+./setup.sh
 
 else
 
