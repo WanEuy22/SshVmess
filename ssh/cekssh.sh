@@ -75,6 +75,9 @@ echo "----------------------------------------------";
         cat /tmp/vpn-login-udp.txt
 fi
 echo "----------------------------------------------";
-echo "SCRIPT PREMIUM BY WAANSTORES"
 echo "";
+echo -e ""
+read -n 1 -s -r -p "Press any key to back on menu"
+
+menu
 
