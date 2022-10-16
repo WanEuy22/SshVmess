@@ -36,8 +36,9 @@ echo -e "License Wrong or Expired.!!" | lolcat
 sleep 2
 clear
 echo -e "Permission Denied.!! Wrong License or Expired License" | lolcat
-sleep 1.5
+sleep 2
 echo -e "Wait To Process Stop Installation" | lolcat
+sleep 2
 rm -rf /root/setup.sh
 exit
 
