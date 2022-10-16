@@ -2,6 +2,7 @@
 apt-get install lolcat -y
 clear
 
+echo -e "--------------------------------" | lolcat
 echo -e "×××××REQUEST ACCESS SCRIPT××××××" | lolcat
 echo -e "--------------------------------" | lolcat
 read -p "Input Your License Key : " pwd
@@ -14,7 +15,7 @@ clear
 echo -e "Checking Status License..." | lolcat
 sleep 2
 clear
-echo -e "License Verification Success!" lolcat
+echo -e "License Verification Success!" | lolcat
 sleep 2
 clear
 echo -e "Wait To Process Install" | lolcat
