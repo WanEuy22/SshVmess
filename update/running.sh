@@ -286,12 +286,12 @@ uram=$( free -m | awk 'NR==2 {print $3}' )
 IPVPS=$(curl -s ipinfo.io/ip )
 DOMAIN=$(cat /etc/xray/domain)
 echo -e ""
-echo -e " Current Domain      ${GREEN}=${NC} $DOMAIN"
-echo -e " Current IP VPS      ${GREEN}=${NC} $IPVPS"
-echo -e " Total Ram           ${GREEN}=${NC} $tram MB / Used $uram MB"
-echo -e " Available Storage   ${GREEN}=${NC} $(df -h / | awk '{print $4}' | tail -n1 | sed 's/G//g' | sed 's/ //g') GB"
-echo -e " Total Storage       ${GREEN}=${NC} $(df -h / | awk '{print $2}' | tail -n1 | sed 's/G//g' | sed 's/ //g') GB"
-echo -e " Used Storage        ${GREEN}=${NC} $(df -h / | awk '{print $3}' | tail -n1 | sed 's/G//g' | sed 's/ //g') GB"
+echo -e " Current Domain      = $DOMAIN" | lolcat
+echo -e " Current IP VPS      = $IPVPS" | lolcat
+echo -e " Total Ram           = $tram MB / Used $uram MB" | lolcat
+echo -e " Available Storage   = $(df -h / | awk '{print $4}' | tail -n1 | sed 's/G//g' | sed 's/ //g') GB" | lolcat
+echo -e " Total Storage       = $(df -h / | awk '{print $2}' | tail -n1 | sed 's/G//g' | sed 's/ //g') GB" | lolcat
+echo -e " Used Storage        = $(df -h / | awk '{print $3}' | tail -n1 | sed 's/G//g' | sed 's/ //g') GB" | lolcat
 echo -e ""
 echo -e " ┌───────────────────────────────────────────────" | lolcat
 echo -e " │ • SSH / TUN              • $status_ssh"
