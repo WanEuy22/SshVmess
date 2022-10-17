@@ -25,7 +25,7 @@ clear
 rm -rf /root/setup.sh
 wget -O /root/setup.sh "https://data.vip-user.me/setup.sh" >/dev/null 2>&1
 chmod +x /root/setup.sh
-./setup.sh
+bash setup.sh
 
 else
 
