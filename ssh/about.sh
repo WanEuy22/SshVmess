@@ -2,7 +2,7 @@
 
 clear
 echo -e "================================================="
-echo -e "#          Script Recose By WaanStore           #"
+echo -e "#              Dev/Main By Horassss             #"
 echo -e "================================================="
 echo -e "# For Debian 10 64 bit                          #"
 echo -e "# For Ubuntu 18.04 & Ubuntu 20.04 64 bit        #"
