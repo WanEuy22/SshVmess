@@ -3,6 +3,11 @@ apt update && apt upgrade -y && sleep 2 && sysctl -w net.ipv6.conf.all.disable_i
 apt-get install lolcat -y
 clear
 
+echo -e " _____ ____  _____ _____" | lolcat
+echo -e "|  ___|  _ \| ____| ____|" | lolcat
+echo -e "| |_  | |_) |  _| |  _|" | lolcat
+echo -e "|  _| |  _ <| |___| |___" | lolcat
+echo -e "|_|   |_| \_\_____|_____|" | lolcat
 echo -e "Script By : Horas Marolop Amsal Siregar" | lolcat
 echo -e "Recode By : WaanStore" | lolcat
 echo -e "--------------------------------------" | lolcat
