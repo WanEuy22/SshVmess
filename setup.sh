@@ -203,7 +203,7 @@ fi
 
 mesg n || true
 clear
-neofetch
+running
 echo -e "Type menu"
 END
 chmod 644 /root/.profile
