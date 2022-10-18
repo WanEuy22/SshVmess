@@ -101,7 +101,7 @@ running
 restart
 ;;
 4 | 04)
-spek
+system
 ;;
 5 | 05)
 echo -e "${GREEN}Prosess Reboot Segera Dimulai${NC}"
