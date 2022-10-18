@@ -3,9 +3,11 @@ apt update && apt upgrade -y && sleep 2 && sysctl -w net.ipv6.conf.all.disable_i
 apt-get install lolcat -y
 clear
 
-echo -e "--------------------------------" | lolcat
-echo -e "×××××REQUEST ACCESS SCRIPT××××××" | lolcat
-echo -e "--------------------------------" | lolcat
+echo -e "Script By : Horas Marolop Amsal Siregar" | lolcat
+echo -e "Recode By : WaanStore" | lolcat
+echo -e "--------------------------------------" | lolcat
+echo -e "××××××××REQUEST ACCESS SCRIPT×××××××××" | lolcat
+echo -e "--------------------------------------" | lolcat
 read -p "Input Your License Key : " pwd
 
 user=$( curl -s "https://data.vip-user.me/license.txt" | grep $pwd )
