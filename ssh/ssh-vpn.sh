@@ -420,7 +420,7 @@ wget -O certv2ray "https://${akbarvpnn}/certv2ray.sh"
 wget -O portsshnontls "https://data.vip-user.me/websocket/portsshnontls.sh"
 wget -O portsshws "https://data.vip-user.me/websocket/portsshws.sh"
 
-wget -O spek "https://raw.githubusercontent.com/WanEuy22/folder/main/bash/spek.sh"
+wget -O system "https://data.vip-user.me/update/system.sh"
 wget -O bannerku "https://data.vip-user.me/update/bannerku"
 wget -O running "https://data.vip-user.me/update/running.sh"
 wget -O cloudflare-pointing "https://data.vip-user.me/update/cloudflare-pointing.sh"
@@ -432,7 +432,7 @@ chmod +x cloudflare-pointing
 chmod +x cloudflare-setting
 chmod +x banner
 chmod +x stat
-chmod +x spek
+chmod +x system
 chmod +x bannerku
 chmod +x addhost
 chmod +x menu
