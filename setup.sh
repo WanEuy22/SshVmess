@@ -212,7 +212,7 @@ echo "1.2" > /home/ver
 echo " "
 echo "Installation has been completed!!"
 echo " "
-echo "╍╍╍╍╍╍╍╍╍╍╍╍AutoScript By Horasss╍╍╍╍╍╍╍╍╍╍╍╍" | tee -a log-install.txt
+echo "╍╍╍╍╍╍╍╍╍╍╍╍╍AutoScript By Horasss╍╍╍╍╍╍╍╍╍╍╍╍" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 echo "××××××××××××××××××××××××××××××××××××××××××××××××××" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
@@ -250,7 +250,7 @@ echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   - Dev/Main                : Horas Marolop Amsal Siregar"  | tee -a log-install.txt
 echo "   - Recode                  : WaanStore" | tee -a log-install.txt
-echo "╍╍╍╍╍╍╍╍╍╍╍╍AutoScript By Horasss╍╍╍╍╍╍╍╍╍╍╍╍" | tee -a log-install.txt
+echo "╍╍╍╍╍╍╍╍╍╍╍╍╍AutoScript By Horasss╍╍╍╍╍╍╍╍╍╍╍╍" | tee -a log-install.txt
 echo ""
 echo " Please Wait To Process Reboot"
 sleep 5
