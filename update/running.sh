@@ -309,5 +309,5 @@ echo -e " │ • OHP SSH                • $sohr"
 echo -e " │ • OHP DROPBEAR           • $sohp"
 echo -e " └───────────────────────────────────────────────" | lolcat
 echo -e ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -n 1 -s -r -p "Press Enter To Display Menu"
 menu
