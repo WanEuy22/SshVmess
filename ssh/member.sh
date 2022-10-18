@@ -14,9 +14,9 @@ off='\x1b[m'
 # Getting
 
 clear
-echo "---------------------------------------------------"
-echo "USERNAME          EXP DATE          STATUS"
-echo "---------------------------------------------------"
+echo -e "---------------------------------------------------" | lolcat
+echo -e "${BLUE}USERNAME          EXP DATE          STATUS${NC}"
+echo -e "---------------------------------------------------" | lolcat
 while read expired
 do
 AKUN="$(echo $expired | cut -d: -f1)"
@@ -25,16 +25,16 @@ exp="$(chage -l $AKUN | grep "Account expires" | awk -F": " '{print $2}')"
 status="$(passwd -S $AKUN | awk '{print $2}' )"
 if [[ $ID -ge 1000 ]]; then
 if [[ "$status" = "L" ]]; then
-printf "%-17s %2s %-17s %2s \n" "$AKUN" "$exp     " "${RED}LOCKED${NORMAL}"
+printf "%-17s %2s %-17s %2s \n" "$AKUN" "$exp     " "User Locked"
 else
-printf "%-17s %2s %-17s %2s \n" "$AKUN" "$exp     " "${GREEN}UNLOCKED${NORMAL}"
+printf "%-17s %2s %-17s %2s \n" "$AKUN" "$exp     " "User Unlocked"
 fi
 fi
 done < /etc/passwd
 JUMLAH="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
-echo "---------------------------------------------------"
-echo "Account number: $JUMLAH user"
-echo "---------------------------------------------------"
+echo -e "---------------------------------------------------" | lolcat
+echo -e "${BLUE}Jumlah User Ssh & OpenVpn : $JUMLAH User${NC}"
+echo -e "---------------------------------------------------" | lolcat
 echo -e ""
 read -n 1 -s -r -p "Press any key to back on menu"
 
