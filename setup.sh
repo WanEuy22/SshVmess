@@ -27,7 +27,7 @@ dart=$(cat /etc/hosts | grep -w `hostname` | awk '{print $2}')
 if [[ "$hst" != "$dart" ]]; then
 echo "$localip $(hostname)" >> /etc/hosts
 fi
-apt-get install lolcat
+apt-get install lolcat -y
 echo -e "[ ${tyblue}NOTES${NC} ] Before we go.. "
 sleep 1
 echo -e "[ ${tyblue}NOTES${NC} ] I need check your headers first.."
@@ -114,9 +114,60 @@ ws="data.vip-user.me/websocket"
 ohp="data.vip-user.me/ohp"
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"hi
+echo "Checking VPS"
 IZIN=$(wget -qO- ipinfo.io/ip);
+clear
 
+echo -e "
+ _____                ____
+|  ___| __ ___  ___  / ___|  ___
+| |_ | '__/ _ \/ _ \ \___ \ / __|
+|  _|| | |  __/  __/  ___) | (__
+|_|  |_|  \___|\___| |____/ \___|" | lolcat
+echo -e "--------------------------------------" | lolcat
+echo -e "Script By : Horassss" | lolcat
+echo -e "Recode By : WaanStore" | lolcat
+echo -e "--------------------------------------" | lolcat
+echo -e "××××××××REQUEST ACCESS SCRIPT×××××××××" | lolcat
+echo -e "--------------------------------------" | lolcat
+read -p "Input Your License Key : " pwd
+
+user=$( curl -s "https://data.vip-user.me/license.txt" | grep $pwd )
+if [ "$pwd" == "$user" ];
+then
+
+clear
+echo -e "Checking Status License..." | lolcat
+sleep 2
+clear
+echo -e "License Verification Success!" | lolcat
+sleep 2
+clear
+echo -e "Wait To Process Install" | lolcat
+sleep 3
+clear
+rm -rf /root/setup.sh
+wget -O /root/setup.sh "https://data.vip-user.me/setup.sh" >/dev/null 2>&1
+chmod +x /root/setup.sh
+bash setup.sh
+
+else
+
+clear
+echo -e "Checking Status License..." | lolcat
+sleep 2
+clear
+echo -e "License Wrong or Expired.!!" | lolcat
+sleep 2
+clear
+echo -e "Permission Denied.!! Wrong License or Expired License" | lolcat
+sleep 2
+echo -e "Wait To Process Stop Installation" | lolcat
+sleep 2
+rm -rf /root/setup.sh
+exit
+
+fi
 rm -f setup.sh
 clear
 if [ -f "/etc/xray/domain" ]; then
