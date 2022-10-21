@@ -32,7 +32,7 @@ fi
 echo -e "[ ${green}INFO${NC} ] Starting renew cert... " 
 sleep 2
 echo -e "[ ${green}INFO$NC ] Getting acme for cert"
-wget autosc.me/acme.sh >/dev/null 2>&1
+if ! [ -d /root/.acme.sh ];then curl https://get.acme.sh | sh;fi
 bash acme.sh --install >/dev/null 2>&1
 bash acme.sh --register-account -m admin@fsidvpn.live
 wget https://get.acme.sh >/dev/null 2>&1 | sh -s email=admin@fsidvpn.live
