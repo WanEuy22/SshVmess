@@ -15,11 +15,11 @@ off='\x1b[m'
 
 clear
 apt install jq curl -y
-DOMAIN=skuypremium.tech
+DOMAIN=gabutzz-vpn.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c2)
-SUB_DOMAIN=${sub}.skuypremium.tech
-CF_ID=asinfinity321@gmail.com
-CF_KEY=8b6ee7650887c77089b43e09e644cc52a1c7b
+SUB_DOMAIN=${sub}.gabutzz-vpn.my.id
+CF_ID=ybtcm32721@bluecny.com
+CF_KEY=7045168f18b6a175fee2f8ee9aa6ab6cd612f
 set -euo pipefail
 IP=$(wget -qO- ipinfo.io/ip);
 echo "Updating DNS for ${SUB_DOMAIN}..."
