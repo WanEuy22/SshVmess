@@ -18,11 +18,10 @@ source /var/lib/crot/ipvps.conf
 domain=$(cat /etc/xray/domain)
 sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
 cd /root/
-wget -O acme.sh https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh
-bash acme.sh --install
-rm acme.sh
-cd .acme.sh
-echo "starting...., Port 80 Akan di Hentikan Saat Proses install Cert"
-bash acme.sh --register-account -m kimochilol@gmail.com
-bash acme.sh --issue --standalone -d $domain --force
-bash acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key
+# INSTALL CERT DARI ACME
+source ~/.bashrc
+if ! [ -d /root/.acme.sh ];then curl https://get.acme.sh | sh;fi
+~/.acme.sh/acme.sh --set-default-ca --server letsencrypt
+~/.acme.sh/acme.sh --issue -d "$domain" -k ec-256 --alpn
+~/.acme.sh/acme.sh --installcert -d "$domain" --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key --ecc
+chown www-data.www-data /etc/xray/xray.*
