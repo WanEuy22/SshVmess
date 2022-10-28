@@ -18,10 +18,5 @@ source /var/lib/crot/ipvps.conf
 domain=$(cat /etc/xray/domain)
 sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
 cd /root/
-# INSTALL CERT DARI ACME
-source ~/.bashrc
-if ! [ -d /root/.acme.sh ];then curl https://get.acme.sh | sh;fi
-~/.acme.sh/acme.sh --set-default-ca --server letsencrypt
-~/.acme.sh/acme.sh --issue -d "$domain" -k ec-256 --alpn
-~/.acme.sh/acme.sh --installcert -d "$domain" --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key --ecc
-chown www-data.www-data /etc/xray/xray.*
+wget raw.githubusercontent.com/fisabiliyusri/Mantap/main/xray/certv2ray.sh
+bash certv2ray.sh
